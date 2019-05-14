@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose');
-
+const config = require('../config');
 
 /*
  * Database connection uri
@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
  *  Mongo ip : 127.0.0.1
  */
 
-const uri = 'mongodb://127.0.0.1:27018/mongo_crud';
+const uri = `mongodb://${config.mongo_ip}:${config.mongo_port}/${config.mongo_db}`;
 
 
 mongoose
