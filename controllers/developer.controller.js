@@ -11,7 +11,7 @@ developer_controller.listDevelopers = (_req, res) => {
     Developer
         .find({})
 
-        // .populate('skills')
+        .populate('skills', 'name')
 
         .then(developers => {
             if (developers)
@@ -46,7 +46,7 @@ developer_controller.getDeveloper = (req, res) => {
         Developer
         .findById(id)
 
-        // .populate('skills')
+        .populate('skills')
 
         .then(developer => {
             if(developer)
