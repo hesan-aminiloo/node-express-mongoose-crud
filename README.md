@@ -51,9 +51,11 @@ After installing MongoDB and run the Mongod service, you should connect to your 
 
 #### Connecting to MongoDb Server :
 
+![Mondodb connection](./Mongo_Connection.png)
 
 Then create a database. I used `mongo_crud` but you can name it whatever you want.
 
+![Mondodb connection](./Mongo_Database.png)
 
 #### Config Application
 
